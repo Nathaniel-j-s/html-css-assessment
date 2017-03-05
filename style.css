@@ -1,0 +1,117 @@
+html, body, div, span, object, iframe, h2, h4, h5, h6, blockquote, pre,
+a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strong, sub, sup, var, b, u, i, dl, dt, dd, ol, ul,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Someone forgot to design for mobile first. That someone is me. */
+
+* {
+  box-sizing: border-box;
+  font-family: Maven Pro;
+  color: #ffffff;
+}
+
+body {
+  background-image: url("./img/main-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+li {
+  display: inline;
+}
+
+.menu, .disclaimer {
+  display: none;
+}
+
+.navbar {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  background-color: black;
+}
+
+.navitem {
+  margin: 0;
+  padding: 0;
+  width: 33%;
+  float: left;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+    padding-top: 150px;
+}
+
+.name {
+  font-size: 90px;
+  margin: 0;
+
+  padding: 0;
+  font-weight: bold;
+}
+
+.port {
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  top: -15px;
+}
+
+.arrdiv {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.arrow {
+  width: 75px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  bottom: 50px;
+}
+
+@media all and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    width: 50px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+  }
+
+  .disclaimer {
+    display: block;
+    font-size: 8px;
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    top: 35px;
+    left: 80px;
+  }
+}
