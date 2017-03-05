@@ -32,7 +32,7 @@ li {
   display: inline;
 }
 
-.menu, .disclaimer {
+.menu, .disclaimer, .social1, .social2 {
   display: none;
 }
 
@@ -105,11 +105,29 @@ li {
     position: absolute;
   }
 
+	.social1 {
+		display: block;
+		width: 15px;
+		top: 25px;
+		right: 90px;
+		float: right;
+		position: absolute;
+	}
+
+	.social2 {
+		display: block;
+		width: 15px;
+		top: 25px;
+		right: 50px;
+		float: right;
+		position: absolute;
+	}
+
   .disclaimer {
     display: block;
     font-size: 8px;
     position: absolute;
-    width: 50%;
+    width: 30%;
     margin: auto;
     top: 35px;
     left: 80px;
